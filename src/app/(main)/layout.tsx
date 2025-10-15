@@ -3,7 +3,7 @@ import { setAllLessons, setOneLesson,setAllComments } from "@/Features/Slices/Le
 import { useAppDispatch } from "@/Lib/Store/store";
 import { useEffect } from "react";
 import {Curriculm,comments} from '@/DB/Curriculm_Content.json';
-import "video.js/dist/video-js.css";
+import Provider_Contextes from "@/Contexts/Provider_Contextes";
 
 export default function MainLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   const Lessons = Curriculm.map(week=>
@@ -18,7 +18,9 @@ export default function MainLayout({children,}: Readonly<{children: React.ReactN
 
   return (
     <>
+      <Provider_Contextes>
         {children}
+      </Provider_Contextes>
     </>
 
   );

@@ -5,6 +5,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     AllLessons:[] as Lesson_Interface[],
+    AllQuestions:[] as Lesson_Interface[],
     Lesson:{} as Lesson_Interface,
     AllComments:[] as Comment_Interface[],
     loading:true,
@@ -29,10 +30,14 @@ const Lesson_Slice = createSlice({
         },
         setAnewComment:(state,action)=>{
             state.AllComments.push(action.payload)
-        }
+        },
+        setAnewQuestion:(state,action)=>{
+            state.AllQuestions.push(action.payload)
+        },
+        
 
     }
 })
 
 export default Lesson_Slice.reducer
-export const {setAllLessons,setOneLesson,getLessonById,setAllComments,setAnewComment} = Lesson_Slice.actions
+export const {setAllLessons,setOneLesson,getLessonById,setAllComments,setAnewComment,setAnewQuestion} = Lesson_Slice.actions

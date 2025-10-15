@@ -16,7 +16,6 @@ export default function Breadcrumb() {
         {segments.map((seg, index) => {
           const href = '/' + segments.slice(0, index + 1).join('/');
           const name = decodeURIComponent(seg);
-          console.log(href)
           return (
             <li key={href} className="flex items-center gap-x-2">
               <FaAngleRight size={13}/>

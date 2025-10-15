@@ -1,9 +1,8 @@
 'use client'
-
-import { useEffect, useRef } from "react";
-import videojs from "video.js";
-import "video.js/dist/video-js.css";
-type VideoJsPlayer = ReturnType<typeof videojs>;
+import { useEffect, useRef, useState } from "react";
+import plyr from "plyr";
+import "plyr/dist/plyr.css";
+import { FaPlay } from "react-icons/fa";
 
 export default function VideoPlayer({
   src,
@@ -12,43 +11,63 @@ export default function VideoPlayer({
   src: string;
   poster?: string;
 }) {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-  const playerRef = useRef<VideoJsPlayer | null>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
     if (!videoRef.current) return;
 
-    if (!playerRef.current) {
-      playerRef.current = videojs(videoRef.current, {
-        controls: true,
-        autoplay: false,
-        preload: "auto",
-        poster,
-        fluid: true,
-        responsive:true
-      });
-    } else {
-      playerRef.current.src({ src, type: "video/mp4" });
-      playerRef.current.poster(poster || "");
-    }
+    const player = new plyr(videoRef.current, {
+      controls: ["play", "progress", "current-time", "mute", "volume", "settings", "fullscreen"],
+    });
 
-  }, [src, poster]);
+    // 🔹 متابعة حالة التشغيل والإيقاف
+    player.on("play", () => setIsPlaying(true));
+    player.on("pause", () => setIsPlaying(false));
 
-  useEffect(() => {
+    // 🔹 إنشاء زر مخصص (Wide Mode)
+    const button = document.createElement("button");
+    button.innerHTML = "🖥️"; // أيقونة WIDE
+    button.className = "plyr__controls__item plyr__custom-wide-btn";
+    button.title = "Wide Mode";
+
+    button.addEventListener("click", () => {
+      const wrapper = videoRef.current?.closest(".video-wrapper");
+      wrapper?.classList.toggle("wide-mode");
+    });
+
+    const controls = document.querySelector(".plyr__controls");
+    controls?.appendChild(button);
+
     return () => {
-      if (playerRef.current) {
-        playerRef.current.dispose();
-        playerRef.current = null;
-      }
+      player.destroy();
     };
   }, []);
 
   return (
-    <div data-vjs-player>
+    <div className="video-wrapper relative transition-all duration-500 z-50">
+      {/* الفيديو */}
       <video
         ref={videoRef}
-        className="video-js vjs-big-play-centered w-full rounded-lg overflow-hidden"
+        src={src}
+        className="w-full h-[250px] rounded-xl overflow-hidden"
+        playsInline
+        controls
+        poster={poster}
       />
+
+      {/* زر التشغيل والإيقاف في المنتصف */}
+      {!isPlaying && (
+        <button
+          onClick={() => videoRef.current?.play()}
+          className="absolute inset-0 flex items-center justify-center"
+        >
+          <span className="bg-white rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110">
+            <FaPlay size={15} className="text-red-400 ml-1" />
+          </span>
+        </button>
+      )}
+
     </div>
   );
 }

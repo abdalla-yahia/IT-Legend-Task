@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import 'video.js/dist/video-js.css';
 
 html{
   scroll-behavior: smooth;
@@ -116,26 +115,25 @@ body {
   font-family: Spartan, Helvetica, sans-serif;
 }
 
-.vjs-big-play-button {
-  background-color: rgb(255, 255, 255) !important;
-  border-radius: 50% !important;
-  width: 80px !important;
-  height: 80px !important;
-  font-size: 3rem !important;
-  transition: all 0.3s ease;
-
-  .vjs-icon-placeholder{
-    color: #f87171 !important; 
-  }
-
+.video-wrapper {
+  position: relative;
+  width: 500px;
+  margin: auto;
+  transition: all 0.5s ease;
 }
-
-.vjs-big-play-button:hover {
-  background-color: #f87171 !important; 
-  transform: scale(1.1);
-
-  .vjs-icon-placeholder{
-    color: #fff !important; 
-  }
-  
+.wide-mode {
+  width: 100%;
+  height:200px;
+  max-height: 300px;
+  max-width: 100%;
+  background: #000;
+  z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.plyr__custom-wide-btn {
+  background: transparent;
+  font-size: 18px;
+  cursor: pointer;
 }
