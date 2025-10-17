@@ -1,4 +1,6 @@
-# IT-Legend Frontend Task — Course Page  
+# IT-Legend Frontend Task — Course Page 
+
+# (Live Demo)[https://it-legend-task-ten.vercel.app/courses/course-details-2]
 **Applicant:** Abdalla Yahia (Abu Yahia)  
 **Position:** Front-End Developer (Next.js)  
 **Frameworks & Libraries:**  
