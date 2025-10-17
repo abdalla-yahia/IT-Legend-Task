@@ -16,9 +16,9 @@ export default function Add_New_Comment_Hook() {
     const formState = {
       ...prevstate,
       id:AllComments?.length + 1,
-      name:'Your Name',
+      name:'Abdalla Yahia',
       date:date,
-      image:'https://randomuser.me/api/portraits/men/35.jpg',
+      image:'/Images/15.jpg',
       comment:formdata.get('Comment') as string
     }
     //Check Data Validation
