@@ -47,7 +47,7 @@
             "time":10,
             "questions":[
               {
-                "id":10,
+                "id":1,
                 "question": "What is the main purpose of this course?",
                 "options": ["Learn PHP", "Learn storytelling", "Learn databases", "Learn React"],
                 "correctAnswer": "Learn storytelling",
@@ -160,14 +160,14 @@
               "question": "What keyword is used to return a value from a function?",
               "options": ["exit", "yield", "return", "output"],
               "correctAnswer": "return",
-              "point":5
+              "point":10
             },
             {
               "id":2,
               "question": "Can a function return multiple values directly?",
               "options": ["Yes", "No", "Only in C++", "Depends on the browser"],
               "correctAnswer": "No",
-              "point":5
+              "point":10
             }
           ]
         },
