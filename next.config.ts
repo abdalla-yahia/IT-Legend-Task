@@ -6,12 +6,8 @@ const nextConfig: NextConfig = {
     remotePatterns:[
       {
         protocol:"https",
-        hostname:"**"
-      },
-      {
-        protocol:"http",
-        hostname:"**"
-      },
+        hostname:"randomuser.me"
+      }
     ]
   }
 };
