@@ -142,9 +142,11 @@ body {
   cursor: pointer;
 }
 
-@media (max-width:767px) {
+/* If User Want To Disable Wide Mode On Small Screen  */
+
+/* @media (max-width:767px) {
   .plyr__custom-wide-btn {
     display: none;
   }
   
-}
+} */

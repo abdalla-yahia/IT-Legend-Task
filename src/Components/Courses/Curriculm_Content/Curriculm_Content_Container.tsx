@@ -6,11 +6,13 @@ import {Curriculm} from '@/DB/Curriculm_Content.json'
 import Pdf_Container from "../Pdf/Pdf_Container"
 import { RootState, useAppSelector } from "@/Lib/Store/store"
 import Exam_Container from "../Exams/Exam_Container"
+import { UseWideModeContext } from "@/Contexts/Wide_Mode_Context"
 export default function Curriculm_Content_Container() {
   const {LessonPdf} = useAppSelector((state:RootState)=>state.lesson);
+  const {toggleWideMode} = UseWideModeContext();
 
   return (
-    <section className="order-3 md:order-2 flex flex-col justify-start items-start gap-6 row-span-2">
+    <section className={`${toggleWideMode ? 'col-span-2':'col-span-1'} order-3 md:order-2 flex flex-col justify-start items-start gap-6 row-span-2`}>
      {/*Course Title*/}
       <h2 className="w-full capitalize font-medium text-4xl h-[65px]">Topic for this course</h2>
      {/*Progress*/}

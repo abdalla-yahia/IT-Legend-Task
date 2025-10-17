@@ -103,6 +103,5 @@ export default function Lesson_Component_Hook({lesson}:{lesson:Lesson_Interface}
             }
         }
     } 
-
   return {ClickPdfIconHandller,ClickLessonVideoHandller,ToggleShowIcon,LessonShown}
 }

@@ -11,7 +11,7 @@
     "Curriculm": [
     {
       "id": 1,
-      "title": "Week 1-4",
+      "title": "Course Introduction",
       "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
       "lessons": [
         {
@@ -119,7 +119,7 @@
     },
     {
       "id": 2,
-      "title": "Week 5-8",
+      "title": "JavaScript Language Basics",
       "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
       "lessons": [
         {
@@ -207,7 +207,7 @@
     },
     {
       "id": 3,
-      "title": "Week 6-3",
+      "title": "Components & Databinding",
       "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
       "lessons": [
         {

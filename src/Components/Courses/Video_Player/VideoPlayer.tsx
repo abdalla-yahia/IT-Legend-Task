@@ -23,7 +23,7 @@ export default function VideoPlayer({src,poster,}: {src: string;poster?: string;
     
     const button = document.createElement("button");
     button.innerHTML = "🖥️"; 
-    button.className = "plyr__controls__item plyr__custom-wide-btn";
+    button.className = "plyr__controls__item plyr__custom-wide-btn ";
     button.title = "Wide Mode";
 
     button.addEventListener("click", () => {
