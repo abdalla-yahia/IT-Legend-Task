@@ -1,207 +1,319 @@
-{
+{   
+    "title":"Web Development with Next.js v16",
     "duration": "3 weeks",
     "Lessons": 8,
     "enrolled": "65 Students",
     "Language": "English",
-    "instractor": "Edward Norton",
+    "instractor": "Ali Shahin",
     "level": "Intermediate",
     "category": "Web Development",
     "rating": "4.8 / 5",
-    "Curriculm":
-     [
+    "Curriculm": [
+    {
+      "id": 1,
+      "title": "Week 1-4",
+      "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
+      "lessons": [
         {
-            "id": 1,
-            "title": "Week 1-4",
-            "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
-            "lessons": [
-                {
-                    "id": 1,
-                    "title": "Introduction",
-                    "duration": "30 min",
-                    "videoUrl":"https://vjs.zencdn.net/v/oceans.mp4",
-                    "posterUrl":"https://i.ytimg.com/vi/o-gQkAnyg54/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBUqOkilphGS9Du5zlLDeBpYlFsjg",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 2,
-                    "title": "Course Overview",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-                    "posterUrl": "https://picsum.photos/seed/2/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 3,
-                    "title": "Course Overview",
-                    "duration": "45 min",
-                    "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
-                    "posterUrl": "https://picsum.photos/seed/1/1280/720",
-                    "completed": true,
-                    "isexame":true,
-                    "questions":0,
-                    "time":10
-                },
-                {
-                    "id": 4,
-                    "title": "Course Exercise/ Reference Files",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
-                    "posterUrl": "https://picsum.photos/seed/3/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 5,
-                    "title": "Code Editor Installation (Optional if you have one)",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
-                    "posterUrl": "https://picsum.photos/seed/4/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 6,
-                    "title": "Embedding PHP in Html",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-                    "posterUrl": "https://picsum.photos/seed/5/1280/720",
-                    "completed": false,
-                    "isexame":false
-                }
-
-            ]
+          "id": 1,
+          "title": "Introduction",
+          "duration": "30 min",
+          "videoUrl": "https://vjs.zencdn.net/v/oceans.mp4",
+          "posterUrl": "https://i.ytimg.com/vi/o-gQkAnyg54/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBUqOkilphGS9Du5zlLDeBpYlFsjg",
+          "pdf": "https://padlet-uploads.storage.googleapis.com/261624403/af3b1bf152c794129809116ebcdbfac9/Hey_Little_Ant_Graphic_Organizer_and_Anchor_Chart.pdf",
+          "completed": false,
+          "isexame": false
         },
         {
-            "id": 2,
-            "title": "Week 5-8",
-            "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
-            "lessons": [
-                {
-                    "id": 7,
-                    "title": "Defining Functions",
-                    "duration": "30 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-                    "posterUrl": "https://picsum.photos/seed/6/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 8,
-                    "title": "Function Parameters",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-                    "posterUrl": "https://picsum.photos/seed/7/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 9,
-                    "title": "Return Value From Functions",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-                    "posterUrl": "https://picsum.photos/seed/8/1280/720",
-                    "completed": true,
-                    "isexame":true,
-                    "questions":2,
-                    "time":15
-                },
-                {
-                    "id": 10,
-                    "title": "Global Variable and Scope",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
-                    "posterUrl": "https://picsum.photos/seed/9/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 11,
-                    "title": "Newer Way of creating a Constant",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
-                    "posterUrl": "https://picsum.photos/seed/10/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 12,
-                    "title": "Constants",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
-                    "posterUrl": "https://picsum.photos/seed/11/1280/720",
-                    "completed": false,
-                    "isexame":false
-                }
-
-            ]
+          "id": 2,
+          "title": "Course Overview",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "posterUrl": "https://picsum.photos/seed/2/1280/720",
+          "pdf": "https://storage.googleapis.com/mnhs-finding-aids-public/library/findaids/CMToolkit/Checklists/PDFA%20Procedures.pdf",
+          "completed": false,
+          "isexame": false
         },
         {
-            "id": 3,
-            "title": "Week 6-3",
-            "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
-            "lessons": [
-                {
-                    "id": 13,
-                    "title": "Date & Time",
-                    "duration": "30 min",
-                    "videoUrl":"https://vjs.zencdn.net/v/oceans.mp4",
-                    "posterUrl": "https://picsum.photos/seed/12/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 14,
-                    "title": "Global Time",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-                    "posterUrl": "https://picsum.photos/seed/13/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 15,
-                    "title": "Get Full Year",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-                    "posterUrl": "https://picsum.photos/seed/14/1280/720",
-                    "completed": true,
-                    "isexame":true,
-                    "questions":5,
-                    "time":20
-                },
-                {
-                    "id": 16,
-                    "title": "Course Exercise/ Reference Files",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
-                    "posterUrl": "https://picsum.photos/seed/16/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 17,
-                    "title": "Code Editor Installation (Optional if you have one)",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
-                    "posterUrl": "https://picsum.photos/seed/17/1280/720",
-                    "completed": false,
-                    "isexame":false
-                },
-                {
-                    "id": 18,
-                    "title": "Promise and fetch",
-                    "duration": "45 min",
-                    "videoUrl":"https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
-                    "posterUrl": "https://picsum.photos/seed/18/1280/720",
-                    "completed": false,
-                    "isexame":false
-                }
-
+          "id": 3,
+          "title": "Course Overview",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "posterUrl": "https://picsum.photos/seed/1/1280/720",
+          "completed": true,
+          "isexame": true,
+          "questions": {
+            "id":1,
+            "time":10,
+            "questions":[
+              {
+                "id":1,
+                "question": "What is the main purpose of this course?",
+                "options": ["Learn PHP", "Learn storytelling", "Learn databases", "Learn React"],
+                "correctAnswer": "Learn storytelling",
+                "point":2
+              },
+              {
+                "id":2,
+                "question": "Which technique is essential for building strong plots?",
+                "options": ["Personas", "Loops", "Arrays", "Functions"],
+                "correctAnswer": "Personas",
+                "point":2
+              },
+              {
+                "id":3,
+                "question": "What does a character's backstory help with?",
+                "options": ["Grammar", "Character depth", "UI Design", "Speed"],
+                "correctAnswer": "Character depth",
+                "point":2
+              },
+              {
+                "id":4,
+                "question": "What is NOT part of storytelling?",
+                "options": ["Plot", "Character", "Debugging", "Conflict"],
+                "correctAnswer": "Debugging",
+                "point":2
+              },
+              {
+                "id":5,
+                "question": "Which element defines story direction?",
+                "options": ["Plot", "Title", "Font", "Variable"],
+                "correctAnswer": "Plot",
+                "point":2
+              }
             ]
-        }   
-    ],
+          },
+          "time": 10
+        },
+        {
+          "id": 4,
+          "title": "Course Exercise/ Reference Files",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "posterUrl": "https://picsum.photos/seed/3/1280/720",
+          "pdf": "https://storage.googleapis.com/mnhs-finding-aids-public/library/findaids/CMToolkit/BestPractices/FindingAids_PDF-Standards.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 5,
+          "title": "Code Editor Installation (Optional if you have one)",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "posterUrl": "https://picsum.photos/seed/4/1280/720",
+          "pdf": "https://storage.googleapis.com/mnhs-finding-aids-public/library/findaids/CMToolkit/BestPractices/FindingAids_PDFA-Standards.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 6,
+          "title": "Embedding PHP in Html",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+          "posterUrl": "https://picsum.photos/seed/5/1280/720",
+          "pdf": "https://storage.googleapis.com/pdfcrowd-cdn/example.pdf",
+          "completed": false,
+          "isexame": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Week 5-8",
+      "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
+      "lessons": [
+        {
+          "id": 7,
+          "title": "Defining Functions",
+          "duration": "30 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "posterUrl": "https://picsum.photos/seed/6/1280/720",
+          "pdf": "https://storage.googleapis.com/wzukusers/user-31146023/documents/5e8a66ced4760X3IIcXP/ThryvOverview.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 8,
+          "title": "Function Parameters",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+          "posterUrl": "https://picsum.photos/seed/7/1280/720",
+          "pdf": "https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/vulscan/%5BOpenOffice%5D%20MS%20Compound%20Document%20File%20Format.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 9,
+          "title": "Return Value From Functions",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+          "posterUrl": "https://picsum.photos/seed/8/1280/720",
+          "completed": true,
+          "isexame": true,
+          "questions": 
+          {
+            "id":2,
+            "time":15,
+            "questions": [
+            {
+              "id":1,
+              "question": "What keyword is used to return a value from a function?",
+              "options": ["exit", "yield", "return", "output"],
+              "correctAnswer": "return",
+              "point":5
+            },
+            {
+              "id":2,
+              "question": "Can a function return multiple values directly?",
+              "options": ["Yes", "No", "Only in C++", "Depends on the browser"],
+              "correctAnswer": "No",
+              "point":5
+            }
+          ]
+        },
+          "time": 15
+        },
+        {
+          "id": 10,
+          "title": "Global Variable and Scope",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+          "posterUrl": "https://picsum.photos/seed/9/1280/720",
+          "pdf": "https://storage.googleapis.com/download/storage/v1/b/retool-test-dad5c.appspot.com/o/pdf-test?alt=media&generation=1646326358896465",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 11,
+          "title": "Newer Way of creating a Constant",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4",
+          "posterUrl": "https://picsum.photos/seed/10/1280/720",
+          "pdf": "https://storage.googleapis.com/gweb-interland.appspot.com/en-us/hub/pdfs/Google_BeInternetAwesome_DigitalCitiizenshipSafety_Tips_EN.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 12,
+          "title": "Constants",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+          "posterUrl": "https://picsum.photos/seed/11/1280/720",
+          "pdf": "https://storage.googleapis.com/gfw-touched-accounts-pdfs/google-cloud-security-and-compliance-whitepaper.pdf",
+          "completed": false,
+          "isexame": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Week 6-3",
+      "description": "Advanced Story Telling Techniques for writers: Personas, Characters & Plots",
+      "lessons": [
+        {
+          "id": 13,
+          "title": "Date & Time",
+          "duration": "30 min",
+          "videoUrl": "https://vjs.zencdn.net/v/oceans.mp4",
+          "posterUrl": "https://picsum.photos/seed/12/1280/720",
+          "pdf": "https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 14,
+          "title": "Global Time",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "posterUrl": "https://picsum.photos/seed/13/1280/720",
+          "pdf": "https://storage.googleapis.com/gweb-uniblog-publish-prod/documents/PasswordCheckup-HarrisPoll-InfographicFINAL.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 15,
+          "title": "Get Full Year",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+          "posterUrl": "https://picsum.photos/seed/14/1280/720",
+          "completed": true,
+          "isexame": true,
+          "questions":{
+            "id":3,
+            "time": 20,
+          "questions": [
+            {
+              "id":1,
+              "question": "Which method is used to get the current year in JavaScript?",
+              "options": ["getMonth()", "getFullYear()", "getYear()", "getDate()"],
+              "correctAnswer": "getFullYear()",
+              "point":2
+            },
+            {
+              "id":2,
+              "question": "What type of object is used to handle dates in JS?",
+              "options": ["Date", "Time", "Moment", "Calendar"],
+              "correctAnswer": "Date",
+              "point":2
+            },
+            {
+              "id":3,
+              "question": "Which value does new Date().getFullYear() return in 2025?",
+              "options": ["2023", "2024", "2025", "undefined"],
+              "correctAnswer": "2025",
+              "point":2
+            },
+            {
+              "id":4,
+              "question": "Can you change the year value of a Date object?",
+              "options": ["Yes, using setFullYear()", "No", "Only once", "Depends on timezone"],
+              "correctAnswer": "Yes, using setFullYear()",
+              "point":2
+            },
+            {
+              "id":5,
+              "question": "Which library extends Date handling features?",
+              "options": ["Lodash", "Moment.js", "Axios", "React"],
+              "correctAnswer": "Moment.js",
+              "point":2
+            }
+          ]
+        },
+          "time": 20
+        },
+        {
+          "id": 16,
+          "title": "Course Exercise/ Reference Files",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "posterUrl": "https://picsum.photos/seed/16/1280/720",
+          "pdf": "https://storage.googleapis.com/cloud-next-2023-pdfs/google-cloud-next-2023-agenda.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 17,
+          "title": "Code Editor Installation (Optional if you have one)",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "posterUrl": "https://picsum.photos/seed/17/1280/720",
+          "pdf": "https://storage.googleapis.com/gweb-cloudblog-publish/images/AI_Principles_Overview.max-2000x2000.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 18,
+          "title": "Promise and fetch",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "posterUrl": "https://picsum.photos/seed/18/1280/720",
+          "pdf": "https://storage.googleapis.com/gweb-cloudblog-publish/images/Data_Analytics_Overview.max-2000x2000.pdf",
+          "completed": false,
+          "isexame": false
+        }
+      ]
+    }
+  ],
    "comments": [
   {
     "id":1,

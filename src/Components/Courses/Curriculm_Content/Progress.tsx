@@ -1,10 +1,12 @@
 'use client'
 import { useEffect, useRef, useState } from "react"
 
-export default function Progress_Component({progress}:{progress:number}) {
+export default function Progress_Component() {
+    const progress = localStorage.getItem('student_progress') || 0
     const [visible, setVisible] = useState(false);
     const ProgressRef = useRef<HTMLDivElement | null>(null)
-    
+
+    //Show Student Progress Bar When Window Scroll Down 
     useEffect(()=>{
         const handleScroll = ()=>{
         const target = (ProgressRef.current)?.getBoundingClientRect();
@@ -19,7 +21,7 @@ export default function Progress_Component({progress}:{progress:number}) {
         }
         window.addEventListener('scroll',handleScroll)
         return () => window.removeEventListener("scroll", handleScroll);
-    },[])
+    },[progress])
 
   return (
     <section ref={ProgressRef} className="w-full flex flex-col justify-start items-start gap-5 z-10">

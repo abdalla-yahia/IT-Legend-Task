@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import plyr from "plyr";
 import "plyr/dist/plyr.css";
 import { FaPlay } from "react-icons/fa";
-
+import {UseWideModeContext} from '@/Contexts/Wide_Mode_Context';
 export default function VideoPlayer({
   src,
   poster,
@@ -11,6 +11,7 @@ export default function VideoPlayer({
   src: string;
   poster?: string;
 }) {
+  const {setToggleWideMode} = UseWideModeContext()
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -21,19 +22,20 @@ export default function VideoPlayer({
       controls: ["play", "progress", "current-time", "mute", "volume", "settings", "fullscreen"],
     });
 
-    // 🔹 متابعة حالة التشغيل والإيقاف
+    
     player.on("play", () => setIsPlaying(true));
     player.on("pause", () => setIsPlaying(false));
 
-    // 🔹 إنشاء زر مخصص (Wide Mode)
+    
     const button = document.createElement("button");
-    button.innerHTML = "🖥️"; // أيقونة WIDE
+    button.innerHTML = "🖥️"; 
     button.className = "plyr__controls__item plyr__custom-wide-btn";
     button.title = "Wide Mode";
 
     button.addEventListener("click", () => {
       const wrapper = videoRef.current?.closest(".video-wrapper");
       wrapper?.classList.toggle("wide-mode");
+      setToggleWideMode(prev=>!prev)
     });
 
     const controls = document.querySelector(".plyr__controls");
@@ -46,7 +48,7 @@ export default function VideoPlayer({
 
   return (
     <div className="video-wrapper relative transition-all duration-500 z-50">
-      {/* الفيديو */}
+      
       <video
         ref={videoRef}
         src={src}
@@ -56,7 +58,7 @@ export default function VideoPlayer({
         poster={poster}
       />
 
-      {/* زر التشغيل والإيقاف في المنتصف */}
+      
       {!isPlaying && (
         <button
           onClick={() => videoRef.current?.play()}
