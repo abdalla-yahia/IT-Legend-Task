@@ -4,9 +4,10 @@ import { useAppDispatch } from "@/Lib/Store/store";
 import { useEffect } from "react";
 import {Curriculm,comments} from '@/DB/Curriculm_Content.json';
 import Provider_Contextes from "@/Contexts/Provider_Contextes";
+import { Week_Interface } from "@/Interfaces/Week_Interface";
 
 export default function MainLayout({children,}: Readonly<{children: React.ReactNode;}>) {
-  const Lessons = Curriculm.map(week=>
+  const Lessons = Curriculm.map((week:Week_Interface)=>
     week?.lessons
   )
   const dispatch = useAppDispatch();

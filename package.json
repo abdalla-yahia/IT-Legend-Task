@@ -4,12 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "@prisma/client": "^6.17.1",
     "@reduxjs/toolkit": "^2.9.0",
     "next": "15.5.5",
     "plyr": "^3.8.3",
@@ -33,7 +32,6 @@
     "@types/react-plyr": "^2.1.4",
     "eslint": "^9",
     "eslint-config-next": "15.5.5",
-    "prisma": "^6.17.1",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
