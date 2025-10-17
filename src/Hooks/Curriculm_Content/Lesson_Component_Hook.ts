@@ -96,9 +96,11 @@ export default function Lesson_Component_Hook({lesson}:{lesson:Lesson_Interface}
             
             }
         }else {
-            setToggleExam(prev=>!prev)
-            setToggleShowIcon(false)
-            dispatch(setExam(lesson?.questions))
+            if(ToggleShowIcon){
+                setToggleExam(prev=>!prev)
+                setToggleShowIcon(false)
+                dispatch(setExam(lesson?.questions))
+            }
         }
     } 
 
