@@ -10,7 +10,7 @@ export default function Curriculm_Content_Container() {
   const {LessonPdf} = useAppSelector((state:RootState)=>state.lesson);
 
   return (
-    <section className="flex flex-col justify-start items-start gap-6 row-span-2">
+    <section className="order-3 md:order-2 flex flex-col justify-start items-start gap-6 row-span-2">
      {/*Course Title*/}
       <h2 className="w-full capitalize font-medium text-4xl h-[65px]">Topic for this course</h2>
      {/*Progress*/}

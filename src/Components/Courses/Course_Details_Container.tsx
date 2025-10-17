@@ -13,7 +13,7 @@ export default function Course_Details_Container({ id }: { id: string }) {
       {/*Section Header*/}
       <Section_Header_Container Lesson={Lesson}/>
       {/*Section Body*/}
-      <section className="w-[91.41%] mt-5 min-h-screen  grid grid-cols-1  md:grid-cols-2 grid-flow-dense bg-background  pb-10 gap-20">
+      <section className="w-[91.41%] mt-5 min-h-screen  grid grid-cols-1  md:grid-cols-2 grid-flow-dense bg-background  pb-10 gap-10">
         {/*Video Player*/}
         <Video_Player_Container lesson_details={Lesson}/>
         {/*Curriculm Content Container*/}

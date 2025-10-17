@@ -8,7 +8,7 @@ export interface Lesson_Interface {
     isexame:boolean,
     questions?:Exam_Interface
     time?:number,
-    videoUrl:string
+    videoUrl?:string
     posterUrl?:string
     pdf?:string
 }

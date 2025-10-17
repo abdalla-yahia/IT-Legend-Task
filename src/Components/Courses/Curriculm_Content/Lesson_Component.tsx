@@ -37,7 +37,6 @@ export default function Lesson_Component({lesson}:{lesson:Lesson_Interface}) {
             }
         }
     },[setTogglePdf,setToggleExam])
-
     //Click On Pdf Icon Handeler
     const ClickPdfIconHandller =()=>{
         const file_clicked = {
@@ -73,7 +72,6 @@ export default function Lesson_Component({lesson}:{lesson:Lesson_Interface}) {
             dispatch(setExam(lesson?.questions))
         }
     }
-
     //Clicked Lesson Video Handeller
     const ClickLessonVideoHandller = () =>{
         const file_clicked = {

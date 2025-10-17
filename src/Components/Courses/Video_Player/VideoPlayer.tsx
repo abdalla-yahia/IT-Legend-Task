@@ -4,13 +4,7 @@ import plyr from "plyr";
 import "plyr/dist/plyr.css";
 import { FaPlay } from "react-icons/fa";
 import {UseWideModeContext} from '@/Contexts/Wide_Mode_Context';
-export default function VideoPlayer({
-  src,
-  poster,
-}: {
-  src: string;
-  poster?: string;
-}) {
+export default function VideoPlayer({src,poster,}: {src: string;poster?: string;}) {
   const {setToggleWideMode} = UseWideModeContext()
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -52,13 +46,13 @@ export default function VideoPlayer({
       <video
         ref={videoRef}
         src={src}
-        className="w-full h-[250px] rounded-xl overflow-hidden"
+        className="w-full max-w-full object-cover min-h-[350px] rounded-xl overflow-hidden"
         playsInline
         controls
         poster={poster}
       />
 
-      
+      {/*Play And Pause Button*/}
       {!isPlaying && (
         <button
           onClick={() => videoRef.current?.play()}

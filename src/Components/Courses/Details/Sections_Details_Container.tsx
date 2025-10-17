@@ -9,7 +9,7 @@ import Leader_Board from "./Leader_Board";
 export default function Sections_Details_Container() {
   
   return (
-      <section className="flex flex-col min-h-full gap-10 relative">
+      <section className="order-2 md:order-3 flex flex-col min-h-full gap-10 relative">
           {/*Navbar*/}
           <NavLinks />
           {/*Course Material*/}

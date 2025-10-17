@@ -1,6 +1,6 @@
 export interface Exam_Interface {
     id:number
-    time:string,
+    time:number,
     questions:Question_Interface[]
 }
 export interface Question_Interface {

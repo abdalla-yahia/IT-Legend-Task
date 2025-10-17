@@ -14,7 +14,7 @@ export default function Ask_Question() {
   },[state])
 
   return (   
-    <section className={`${toggleQuestionForm ? 'flex' :'hidden'} justify-center items-center fixed top-0 left-0 bg-black/30 w-full min-h-screen z-40`}>
+    <section className={`${toggleQuestionForm ? 'flex' :'hidden'} justify-center items-center fixed top-0 left-0 bg-black/30 w-full min-h-screen z-50`}>
       <section className={`${toggleQuestionForm ? 'flex' :'hidden'} w-[50%] bg-[#fff] flex flex-col justify-center items-start gap-3 absolute top-[200px] p-5 left-[20%] z-50`}>
           {/*Close Button*/}
           <MdClose onClick={()=>setToggleQuestionForm(prev=>!prev)} className="cursor-pointer text-red-600 font-extrabold text-xl absolute top-5 right-5 hover:scale-125 transition-all duration-500"/>
