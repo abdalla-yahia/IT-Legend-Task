@@ -1,5 +1,4 @@
 import { prisma } from "@/Lib/Prisma/Prisma_Client";
-import { CreateAnewCommentValidation } from "@/Validation/Comment_Validation";
 import { NextRequest, NextResponse } from "next/server";
 
 /**
