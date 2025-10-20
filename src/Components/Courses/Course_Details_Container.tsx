@@ -1,12 +1,14 @@
 'use client'
 import { RootState, useAppDispatch, useAppSelector } from "@/Lib/Store/store";
-import Sections_Details_Container from "./Details/Sections_Details_Container";
 import Section_Header_Container from "./Header/Section_Header_Container";
-import Video_Player_Container from "./Video_Player/Video_Player_Container";
-import Curriculm_Content_Container from "./Curriculm_Content/Curriculm_Content_Container";
 import { Course_Interface } from "@/Interfaces/Course_Interface";
 import { useEffect } from "react";
 import { setAllComments } from "@/Features/Slices/Course_Slice";
+import dynamic from "next/dynamic";
+import Spinner from "@/Utils/Spinner";
+const Video_Player_Container = dynamic(()=>import("./Video_Player/Video_Player_Container"),{ssr:false,loading:()=><Spinner text="Loading"/>});
+const Sections_Details_Container = dynamic(()=>import("./Details/Sections_Details_Container"),{ssr:false,loading:()=><Spinner text="Loading"/>});
+const Curriculm_Content_Container = dynamic(()=>import("./Curriculm_Content/Curriculm_Content_Container"),{ssr:false,loading:()=><Spinner text="Loading"/>});
 
 export default function Course_Details_Container({ id }: { id: string }) {
     const {courses} = useAppSelector((state:RootState)=>state.course) ;
