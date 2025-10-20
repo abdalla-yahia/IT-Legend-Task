@@ -1,6 +1,7 @@
 'use client'
 import { Course_Interface } from "@/Interfaces/Course_Interface";
 import { RootState, useAppSelector } from "@/Lib/Store/store";
+import Breadcrumb from "@/Utils/BreadCrumb_Nav";
 import Link from "next/link";
 
 export default function MainPage() {
@@ -8,6 +9,8 @@ export default function MainPage() {
 
   return (
     <main className="w-[91.41%] min-h-screen flex flex-col justify-start items-center bg-background  pb-10 gap-10">
+        {/*Bread Crumb*/}
+          <Breadcrumb />
         {/*All Courses */}
         <section className="w-[91.41%] h-[42px] my-5 flex flex-col justify-start items-start gap-2">
           <h2 className="text-lg font-medium text-foreground/70 ">All Courses</h2>
