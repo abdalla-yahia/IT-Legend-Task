@@ -13,7 +13,7 @@ export default function Home() {
       <main className="w-full h-screen  flex gap-[32px] justify-center items-center">
         <Image          
           className="dark:invert"
-          src="/public/favicon/android-chrome-512x512.png"
+          src="/favicon/android-chrome-512x512.png"
           alt="Next.js logo"
           width={180}
           height={38}
