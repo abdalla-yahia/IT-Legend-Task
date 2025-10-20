@@ -17,9 +17,9 @@ export default function Comments_Container() {
                     <li key={comment?.id} className='flex justify-start items-start gap-4 pb-3 border-b border-b-[#eee]'>
                         <Image loading='lazy' src={comment?.image} alt={comment?.name + "comment"} width={40} height={40} className='rounded-full'/>
                         <div className='flex flex-col justify-start items-start gap-0'>
-                            <span className='text-black'>Name:{comment?.name}</span>
+                            <span className='text-black'>{comment?.name}</span>
                             <span className='text-muted text-sm mb-5'>{comment?.date}</span>
-                            <p className='text-black'>{comment?.comment}</p>
+                            <p className='text-black'>{comment?.body}</p>
                         </div>
                     </li>
                 )

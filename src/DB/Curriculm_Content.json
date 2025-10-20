@@ -320,21 +320,21 @@
     "name": "Sarah Johnson",
     "date": "October 10, 2025",
     "image": "/Images/44.jpg",
-    "comment": "Great course! The instructor explained everything clearly and the examples were super helpful."
+    "body": "Great course! The instructor explained everything clearly and the examples were super helpful."
   },
   {
     "id":2,
     "name": "Michael Brown",
     "date": "October 8, 2025",
     "image": "/Images/32.jpg",
-    "comment": "I really enjoyed this class. The pace was perfect for beginners and the lessons were well structured."
+    "body": "I really enjoyed this class. The pace was perfect for beginners and the lessons were well structured."
   },
   {
     "id":3,
     "name": "Emily Davis",
     "date": "October 6, 2025",
     "image": "/Images/68.jpg",
-    "comment": "Loved the interactive exercises! They made learning so much easier and more fun."
+    "body": "Loved the interactive exercises! They made learning so much easier and more fun."
   }
 ]
 }

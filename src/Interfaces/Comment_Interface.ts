@@ -3,7 +3,7 @@ export interface Comment_Interface {
     name:string,
     image:string,
     date:string,
-    comment:string,
+    body:string,
     success?:boolean
     message?:string
 }

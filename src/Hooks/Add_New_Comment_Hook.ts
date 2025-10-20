@@ -10,16 +10,19 @@ export default function Add_New_Comment_Hook() {
   const {AllComments} = useAppSelector((state:RootState)=>state.lesson)
   const dispatch = useAppDispatch()
   const date = new Date(Date.now()).toLocaleString('en',{year:'numeric',month:'short',day:'2-digit'})
-  
+  const loggeduser = {
+    name:'Abdalla Yahia',
+    image:'/Images/15.jpg'
+  }
   // Set Anew Comment Handeller
   const SetAnewCommentHandeler = (prevstate:Comment_Interface,formdata:FormData):Comment_Interface=>{
     const formState = {
       ...prevstate,
       id:AllComments?.length + 1,
-      name:'Abdalla Yahia',
+      name:loggeduser?.name,
       date:date,
-      image:'/Images/15.jpg',
-      comment:formdata.get('Comment') as string
+      image:loggeduser?.image,
+      body:formdata.get('Comment') as string
     }
     //Check Data Validation
     const validation = CreateAnewCommentValidation.safeParse(formState)
@@ -35,7 +38,7 @@ export default function Add_New_Comment_Hook() {
     name:'',
     date:'',
     image:'',
-    comment:'',
+    body:'',
     success:false,
     message:''
   }
