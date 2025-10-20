@@ -1,7 +1,9 @@
-{   
-    "title":"Web Development with Next.js v16",
+[{   
+    "id": "course-details-2",
+    "title":"Starting SEO As Your Home",
     "duration": "3 weeks",
     "Lessons": 8,
+    "isPurchased": true,
     "enrolled": "65 Students",
     "Language": "English",
     "instractor": "Ali Shahin",
@@ -337,4 +339,175 @@
     "body": "Loved the interactive exercises! They made learning so much easier and more fun."
   }
 ]
+},
+{
+  "id": "course-details-3",
+  "title": "Mastering React Fundamentals",
+  "duration": "4 weeks",
+  "Lessons": 10,
+  "isPurchased": false,
+  "enrolled": "120 Students",
+  "Language": "English",
+  "instractor": "Omar Khaled",
+  "level": "Beginner",
+  "category": "Frontend Development",
+  "rating": "4.7 / 5",
+  "Curriculm": [
+    {
+      "id": 1,
+      "title": "Introduction to React",
+      "description": "Learn the core concepts of React including components, JSX, and virtual DOM.",
+      "lessons": [
+        {
+          "id": 1,
+          "title": "What is React?",
+          "duration": "25 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "posterUrl": "https://picsum.photos/seed/react1/1280/720",
+          "pdf": "https://storage.googleapis.com/deepmind-media/research/New_Research_Paper.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 2,
+          "title": "Understanding JSX",
+          "duration": "35 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "posterUrl": "https://picsum.photos/seed/react2/1280/720",
+          "pdf": "https://storage.googleapis.com/mnhs-finding-aids-public/library/findaids/CMToolkit/Checklists/PDFA%20Procedures.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 3,
+          "title": "React Components Overview",
+          "duration": "40 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+          "posterUrl": "https://picsum.photos/seed/react3/1280/720",
+          "completed": false,
+          "isexame": true,
+          "questions": {
+            "id": 1,
+            "time": 10,
+            "questions": [
+              {
+                "id": 1,
+                "question": "What is a React component?",
+                "options": [
+                  "A CSS class",
+                  "A reusable UI block",
+                  "A database model",
+                  "A backend function"
+                ],
+                "correctAnswer": "A reusable UI block",
+                "point": 2
+              },
+              {
+                "id": 2,
+                "question": "What syntax is used in React to describe UI?",
+                "options": ["HTML", "JSX", "XML", "CSS"],
+                "correctAnswer": "JSX",
+                "point": 2
+              },
+              {
+                "id": 3,
+                "question": "Which function is used to render React elements?",
+                "options": ["ReactDOM.render()", "renderUI()", "display()", "show()"],
+                "correctAnswer": "ReactDOM.render()",
+                "point": 2
+              }
+            ]
+          },
+          "time": 10
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "React State and Props",
+      "description": "Understand how data flows between components using props and how to manage dynamic data using state.",
+      "lessons": [
+        {
+          "id": 4,
+          "title": "Props in React",
+          "duration": "40 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+          "posterUrl": "https://picsum.photos/seed/react4/1280/720",
+          "pdf": "https://storage.googleapis.com/pdfcrowd-cdn/example.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 5,
+          "title": "State in React",
+          "duration": "45 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
+          "posterUrl": "https://picsum.photos/seed/react5/1280/720",
+          "pdf": "https://storage.googleapis.com/gfw-touched-accounts-pdfs/google-cloud-security-and-compliance-whitepaper.pdf",
+          "completed": false,
+          "isexame": false
+        },
+        {
+          "id": 6,
+          "title": "Handling Events",
+          "duration": "30 min",
+          "videoUrl": "https://storage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4",
+          "posterUrl": "https://picsum.photos/seed/react6/1280/720",
+          "completed": false,
+          "isexame": true,
+          "questions": {
+            "id": 2,
+            "time": 15,
+            "questions": [
+              {
+                "id": 1,
+                "question": "How do you handle an onClick event in React?",
+                "options": [
+                  "onclick='function()'",
+                  "onClick={functionName}",
+                  "clickHandler='fn'",
+                  "useClick()"
+                ],
+                "correctAnswer": "onClick={functionName}",
+                "point": 2
+              },
+              {
+                "id": 2,
+                "question": "What hook is commonly used for managing state?",
+                "options": ["useProps", "useData", "useState", "useEffect"],
+                "correctAnswer": "useState",
+                "point": 2
+              }
+            ]
+          },
+          "time": 15
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "name": "Lina Mohamed",
+      "date": "October 15, 2025",
+      "image": "/Images/37.jpg",
+      "body": "I really want to enroll in this course soon. The syllabus looks very clear and beginner-friendly!"
+    },
+    {
+      "id": 2,
+      "name": "John Smith",
+      "date": "October 14, 2025",
+      "image": "/Images/38.jpg",
+      "body": "The preview lessons were great! Hoping to purchase it next week once my schedule clears up."
+    },
+    {
+      "id": 3,
+      "name": "Aisha Karim",
+      "date": "October 13, 2025",
+      "image": "/Images/39.jpg",
+      "body": "I've seen many React courses, but this one seems to explain the basics in a structured and simple way."
+    }
+  ]
 }
+
+]

@@ -9,7 +9,6 @@ const initialState = {
     AllQuestions:[] as Lesson_Interface[],
     Lesson:{} as Lesson_Interface,
     LessonPdf:'',
-    AllComments:[] as Comment_Interface[],
     Exam:{} as Exam_Interface,
     loading:true,
     error:null
@@ -28,12 +27,6 @@ const Lesson_Slice = createSlice({
         getLessonById:(state,action)=>{
             state?.AllLessons?.filter(lesson=>lesson.id === action.payload)
         },
-        setAllComments:(state,action)=>{
-            state.AllComments = action.payload
-        },
-        setAnewComment:(state,action)=>{
-            state.AllComments.push(action.payload)
-        },
         setAnewQuestion:(state,action)=>{
             state.AllQuestions.push(action.payload)
         },
@@ -47,4 +40,4 @@ const Lesson_Slice = createSlice({
 })
 
 export default Lesson_Slice.reducer
-export const {setAllLessons,setOneLesson,getLessonById,setAllComments,setAnewComment,setAnewQuestion,setLessonPdf,setExam} = Lesson_Slice.actions
+export const {setAllLessons,setOneLesson,getLessonById,setAnewQuestion,setLessonPdf,setExam} = Lesson_Slice.actions

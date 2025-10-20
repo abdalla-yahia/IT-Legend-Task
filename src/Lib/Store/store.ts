@@ -5,11 +5,13 @@ import {
   TypedUseSelectorHook,
 } from "react-redux";
 import Lesson_Slice from '@/Features/Slices/Lesson_Slice';
+import Course_Slice from '@/Features/Slices/Course_Slice';
 
 export const makeStore = () =>
   configureStore({
     reducer: {
       lesson: Lesson_Slice,
+      course: Course_Slice,
     },
   });
 

@@ -6,5 +6,5 @@ export const CreateAnewCommentValidation = z.object({
     name:z.string(),
     date:z.string(),
     image:z.string().optional(),
-    comment:z.string().min(5).max(250),
+    body:z.string().min(5).max(250),
 })

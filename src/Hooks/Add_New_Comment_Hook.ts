@@ -1,13 +1,13 @@
 'use client'
 import { RootState, useAppDispatch, useAppSelector } from "@/Lib/Store/store";
-import {setAnewComment} from '@/Features/Slices/Lesson_Slice'
+import {setAnewComment} from '@/Features/Slices/Course_Slice'
 import { useActionState, useEffect } from "react";
 import { Comment_Interface } from "@/Interfaces/Comment_Interface";
 import { CreateAnewCommentValidation } from "@/Validation/Comment_Validation";
 import { toast } from "react-toastify";
 
 export default function Add_New_Comment_Hook() {
-  const {AllComments} = useAppSelector((state:RootState)=>state.lesson)
+  const {AllComments} = useAppSelector((state:RootState)=>state.course)
   const dispatch = useAppDispatch()
   const date = new Date(Date.now()).toLocaleString('en',{year:'numeric',month:'short',day:'2-digit'})
   const loggeduser = {

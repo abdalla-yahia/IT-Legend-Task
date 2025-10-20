@@ -16,11 +16,9 @@ export default function Leader_Board_Hook() {
       const TotalStudentScore = Exams_Answerd?.reduce((total: number, exam: { totalScore: number }) => total + exam.totalScore, 0);
       const TotalExamsScore = Exams_Answerd?.reduce((total: number, exam: { ExamTotalScore: number }) => total + exam.ExamTotalScore, 0);
       const QuizzesScorePercent = TotalExamsScore > 0 ? Math.round((TotalStudentScore / TotalExamsScore) * 100) : 0;
-        const [Rankings, setRankings] = useState<Array<{id:number,name:string,score:number,image:string}>>([]);
-        const [Achievements, setAchievements] = useState<boolean>(true);
-        const Course={
-          title :'Starting SEO As Your Home'
-        }
+      const [Rankings, setRankings] = useState<Array<{id:number,name:string,score:number,image:string}>>([]);
+      const [Achievements, setAchievements] = useState<boolean>(true);
+        
         //Set Initial Rankings
         useEffect(()=>{
         //Students Rank  & Achievements Modal
@@ -56,5 +54,5 @@ export default function Leader_Board_Hook() {
       }, [Rankings, progress]);
       
     
-return {Course,toggleLeaderBoard,setToggleLeaderBoard,setAchievements,Achievements,Rankings,loggedStudent,message,VideosWatched,PdfWatched,TotalStudentScore,TotalExamsScore,QuizzesScorePercent};
+return {toggleLeaderBoard,setToggleLeaderBoard,setAchievements,Achievements,Rankings,loggedStudent,message,VideosWatched,PdfWatched,TotalStudentScore,TotalExamsScore,QuizzesScorePercent};
 }

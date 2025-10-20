@@ -1,12 +1,12 @@
 'use client'
 import { MdClose } from "react-icons/md";
-
 import Progress_Component from "../../Progress/Progress";
 import Leader_Board_Hook from "@/Hooks/Details/Leader_Board_Hook";
 import Image from "next/image";
+import { Course_Interface } from "@/Interfaces/Course_Interface";
 
-export default function Leader_Board() {
-  const {Course,toggleLeaderBoard,setToggleLeaderBoard,setAchievements,Achievements,Rankings,loggedStudent,message,VideosWatched,PdfWatched,TotalStudentScore,TotalExamsScore,QuizzesScorePercent} = Leader_Board_Hook();
+export default function Leader_Board({ course }: { course:Course_Interface }) {
+  const {toggleLeaderBoard,setToggleLeaderBoard,setAchievements,Achievements,Rankings,loggedStudent,message,VideosWatched,PdfWatched,TotalStudentScore,TotalExamsScore,QuizzesScorePercent} = Leader_Board_Hook();
   //Draw Medal For Top 3 Students
       const StudentRankMedal = (index:number)=>{
         switch(index){
@@ -24,7 +24,7 @@ export default function Leader_Board() {
         {/*Top Title*/}
         <div className="w-full flex flex-col justify-center items-center">
           {/*Course Title*/}
-          <h2 className="text-lg md:text-2xl font-bold w-full text-center">{Course?.title}</h2>
+          <h2 className="text-lg md:text-2xl font-bold w-full text-center">{course?.title}</h2>
           {/*Leader Board*/}
           <h3 className="text-xl font-bold w-full text-center">Leader Borad</h3>
         </div>

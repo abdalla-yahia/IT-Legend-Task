@@ -5,7 +5,7 @@ import Section_Title from '@/Utils/Section_Title';
 import Image from 'next/image';
 
 export default function Comments_Container() {
-    const {AllComments:comments} = useAppSelector((state:RootState)=>state.lesson)
+    const {AllComments:comments} = useAppSelector((state:RootState)=>state.course)
   return (
     <section id='Comments'>
         {/*Section Title*/}
