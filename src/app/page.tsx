@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Home() {
   const route = useRouter()
   useEffect(()=>{
-    route.push('/courses/course-details-2')
+    route.push('/courses/')
   },[])
   return (
       <main className="w-full h-screen  flex gap-[32px] justify-center items-center">
