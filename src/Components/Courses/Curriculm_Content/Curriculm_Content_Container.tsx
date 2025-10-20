@@ -1,11 +1,11 @@
 'use client'
 import { Week_Interface } from "@/Interfaces/Week_Interface"
-import Progress from "./Progress"
+import Progress from "../Progress/Progress"
 import Week_Component from "./Curriculm_Component"
 import {Curriculm} from '@/DB/Curriculm_Content.json'
-import Pdf_Container from "../Pdf/Pdf_Container"
+import Pdf_Container from "../modals/Pdf/Pdf_Container"
 import { RootState, useAppSelector } from "@/Lib/Store/store"
-import Exam_Container from "../Exams/Exam_Container"
+import Exam_Container from "../modals/Exams/Exam_Container"
 import { UseWideModeContext } from "@/Contexts/Wide_Mode_Context"
 export default function Curriculm_Content_Container() {
   const {LessonPdf} = useAppSelector((state:RootState)=>state.lesson);

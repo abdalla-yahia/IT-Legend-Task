@@ -46,7 +46,7 @@ export default function VideoPlayer({src,poster,}: {src: string;poster?: string;
       <video
         ref={videoRef}
         src={src}
-        className="w-full max-w-full object-cover min-h-[350px] rounded-xl overflow-hidden"
+        className="w-full max-w-full object-cover min-h-[350px] overflow-hidden"
         playsInline
         controls
         poster={poster}

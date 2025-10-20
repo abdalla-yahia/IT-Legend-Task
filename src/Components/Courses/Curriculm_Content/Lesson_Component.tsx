@@ -33,7 +33,7 @@ export default function Lesson_Component({lesson}:{lesson:Lesson_Interface}) {
                     ):
                     (
                             LessonShown ? (
-                                <BsUnlock />
+                                <BsUnlock className="text-[#41b69d]"/>
                             ):(
                                 <SlLock />
                             ) 

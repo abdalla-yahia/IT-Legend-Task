@@ -17,14 +17,17 @@ export default function Exam_Container_Hook() {
       };
       //Submit userAnswers
       const SubmitAnswersHandeller =()=>{
+           const totalScore = userAnswers?.reduce((total, answer) => total + (answer.userAnswer === answer.correctAnswer ? answer.point : 0), 0);
+          const ExamTotalScore = Exam?.questions?.reduce((total, question) => total + question.point, 0);
+          const data = {id:Exam?.id,question:Exam?.questions,totalScore,ExamTotalScore}
         //Set Exam Answered On localStorage To Lock It 
         if(localStorage.getItem('exams_Answerd')){
           const ArrayOfExams = JSON.parse(localStorage.getItem('exams_Answerd') as string)
           const FindExam = ArrayOfExams?.find((exam:Exam_Interface)=>exam?.id == Exam?.id)
+
           if(!FindExam){
-            ArrayOfExams.push(Exam)
+            ArrayOfExams.push(data)
             localStorage.setItem('exams_Answerd',JSON.stringify(ArrayOfExams))
-    
             //Review Exam Result And Set Degree Of Exam
             userAnswers?.map(answer=>{
               if(answer?.userAnswer === answer?.correctAnswer){
@@ -33,7 +36,7 @@ export default function Exam_Container_Hook() {
               })
           }
         }else{
-          localStorage.setItem('exams_Answerd',JSON.stringify([Exam]))
+          localStorage.setItem('exams_Answerd',JSON.stringify([data]))
           //Review Exam Result And Set Degree Of Exam
             userAnswers?.map(answer=>{
               if(answer?.userAnswer === answer?.correctAnswer){
@@ -65,16 +68,19 @@ export default function Exam_Container_Hook() {
                 })
                 .then((willClosed) => {
                   if (willClosed) {
+                    const ExamTotalScore = Exam?.questions?.reduce((total, question) => total + question.point, 0);
+                    const data = {id:Exam?.id,question:Exam?.questions,totalScore:0,ExamTotalScore}
                  //Set Data Of Exam On localStorage To Lock It 
                   if(localStorage.getItem('exams_Answerd')){
                     const ArrayOfExams = JSON.parse(localStorage.getItem('exams_Answerd') as string)
                     const FindExam = ArrayOfExams?.find((exam:Exam_Interface)=>exam?.id == Exam?.id)
+
                     if(!FindExam){
-                      ArrayOfExams.push(Exam)
+                      ArrayOfExams.push(data)
                       localStorage.setItem('exams_Answerd',JSON.stringify(ArrayOfExams))
                     }
                   }else{
-                    localStorage.setItem('exams_Answerd',JSON.stringify([Exam]))
+                    localStorage.setItem('exams_Answerd',JSON.stringify([data]))
                   }
                     swal("Exam Closed successfully!", {
                       icon: "success",
