@@ -15,7 +15,7 @@ export default function Sections_Details_Container({ course }: { course:Course_I
       {/*Navbar*/}
       <NavLinks />
       {/*Course Material*/}
-      <Course_Material_Container />
+      <Course_Material_Container course={course}/>
       {/*Comments*/}
       <Comments_Container />
       {/*Add Comment*/}
