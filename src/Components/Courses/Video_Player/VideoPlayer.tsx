@@ -55,6 +55,7 @@ export default function VideoPlayer({src,poster}: {src: string | undefined;poste
       {/*Play And Pause Button*/}
       {!isPlaying && (
         <button
+          aria-label="Play Video"
           onClick={() => videoRef.current?.play()}
           className="absolute inset-0 flex items-center justify-center"
         >

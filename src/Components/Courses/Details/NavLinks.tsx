@@ -8,26 +8,26 @@ export default function NavLinks() {
   return (
     <nav className="w-full">
         <ul className="w-full flex justify-start items-center gap-3">
+            <li className="cursor-pointer hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#ddd] shadow">
                 <Link href={'#Curriculm'} >
-                    <li className="cursor-pointer hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#ddd] shadow">
                             <icon.MdOutlinePlayLesson title="Curriculm" className="inline-block mr-1 mb-0.5 text-lg md:text-xl"/>
-                    </li>
                 </Link>
+            </li>
+            <li className="cursor-pointer hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#ddd] shadow">
                 <Link href={'#Comments'} >
-                    <li className="cursor-pointer hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#ddd] shadow">
                         <icon.LiaCommentsSolid title="Comments" className="inline-block mr-1 mb-0.5 text-lg md:text-xl"/>
-                    </li>
                 </Link>
+            </li>
+            <li className="cursor-pointer hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#ddd] shadow">
                 <Link onClick={()=>setToggleQuestionForm((prev)=>!prev)} href={''} >
-                    <li className="cursor-pointer hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#ddd] shadow">
                         <icon.LiaQuestionSolid title="Questions" className="inline-block mr-1 mb-0.5 text-lg md:text-xl"/>
-                    </li>
                 </Link>
+            </li>
+            <li className="cursor-pointer hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#ddd] shadow">
                 <Link onClick={()=>setToggleLeaderBoard((prev)=>!prev)} href={''} >
-                    <li className="cursor-pointer hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#ddd] shadow">
                             <icon.GrAchievement title="LeadrBoard" className="inline-block mr-1 mb-0.5 text-lg md:text-xl"/>
-                    </li>
                 </Link>
+            </li>
         </ul>
 
     </nav>

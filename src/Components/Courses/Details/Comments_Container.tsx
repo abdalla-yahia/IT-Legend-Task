@@ -15,10 +15,12 @@ export default function Comments_Container() {
             {
                 comments?.slice(0,8).map((comment:Comment_Interface)=>
                     <li key={comment?.id} className='flex justify-start items-start gap-4 pb-3 border-b border-b-[#eee]'>
-                        <Image loading='lazy' src={comment?.image} alt={comment?.name + "comment"} width={40} height={40} className='rounded-full'/>
+                        <div className="w-10 h-10 relative">
+                          <Image loading='lazy' src={comment?.image} alt={comment?.name + "comment"} width={40} height={40} className='object-cover rounded-full'/>
+                        </div>
                         <div className='flex flex-col justify-start items-start gap-0'>
                             <span className='text-black'>{comment?.name}</span>
-                            <span className='text-muted text-sm mb-5'>{comment?.date}</span>
+                            <span className='text-[#5e6978] text-sm mb-5'>{comment?.date}</span>
                             <p className='text-black'>{comment?.body}</p>
                         </div>
                     </li>
