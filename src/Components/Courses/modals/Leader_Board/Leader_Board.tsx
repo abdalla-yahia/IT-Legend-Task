@@ -55,7 +55,7 @@ export default function Leader_Board() {
                 Rankings?.sort((a,b)=>b.score - a.score).slice(0,5).map((student,index)=>(
                   <li key={student?.id} className={`${student?.name === loggedStudent?.name ? 'bg-[#d6eff5] text-amber-600':'bg-white'} p-3  rounded-2xl w-full flex justify-between items-center gap-3`}>
                     <div className="flex justify-start items-center gap-3">
-                      <Image src={student?.image} alt={student?.name} className="w-10 h-10 rounded-full object-cover" width={50} height={50}/>
+                      <Image loading="lazy" src={student?.image} alt={student?.name} className="w-10 h-10 rounded-full object-cover" width={50} height={50}/>
                       <div className="flex flex-col justify-start items-start">
                         <span title={student?.name} className="text-sm md:text-lg font-bold line-clamp-1 text-gray-600">{student?.name}</span>
                         <span title={student?.score.toString()} className="text-sm text-gray-500">Score: {student?.score}</span>
