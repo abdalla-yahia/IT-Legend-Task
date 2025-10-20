@@ -1,7 +1,8 @@
 # IT-Legend Frontend Task — Course Page 
 
-# [Live Demo On Netlify](https://it-legend.netlify.app/)
-# [Live Demo On Vercel](https://it-legend-task-ten.vercel.app/courses/course-details-2)
+~~[Live Demo (Old)](https://it-legend-task-ten.vercel.app/courses/course-details-2)~~  
+➡️ **[New Live Demo](https://it-legend.netlify.app/)**
+
 **Applicant:** Abdalla Yahia (Abu Yahia)  
 **Position:** Front-End Developer (Next.js)  
 **Frameworks & Libraries:**  
