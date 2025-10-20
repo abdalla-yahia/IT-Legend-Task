@@ -40,8 +40,8 @@ export default function Leader_Board({ course }: { course:Course_Interface }) {
         {/*Achievements & Leadrboard*/}
         <section className="w-full flex flex-col overflow-y-scroll scrollbar-none justify-start items-start gap-3">
           <div className="w-full flex justify-start items-center gap-3">
-            <h3 onClick={()=>setAchievements(prev=>!prev)} className={`font-bold cursor-pointer text-sm md:text-lg p-2 rounded-2xl ${Achievements ? 'bg-[#d6eff5]':'bg-[#f5f9fa]/50'}`}>Achievements</h3>
-            <h3 onClick={()=>setAchievements(prev=>!prev)} className={`font-bold cursor-pointer text-sm md:text-lg p-2 rounded-2xl ${!Achievements ? 'bg-[#d6eff5]':'bg-[#f5f9fa]/50'}`}>Leader Board</h3>
+            <h3 onClick={()=>setAchievements(prev=>!prev)} className={`font-mono cursor-pointer text-sm md:text-lg p-2 rounded-2xl ${Achievements ? 'bg-[#d6eff5]':'bg-[#f5f9fa]/50'}`}>Achievements</h3>
+            <h3 onClick={()=>setAchievements(prev=>!prev)} className={`font-mono cursor-pointer text-sm md:text-lg p-2 rounded-2xl ${!Achievements ? 'bg-[#d6eff5]':'bg-[#f5f9fa]/50'}`}>Leader Board</h3>
           </div>
           {/*Achievements*/}
           {Achievements && <ul className={`bg-[#f5f9fa] flex flex-col justify-start items-center p-1 md:p-4 rounded-lg w-full gap-1 md:gap-4`}>
