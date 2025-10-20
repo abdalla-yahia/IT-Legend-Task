@@ -16,7 +16,7 @@ export default function Curriculm_Content_Container() {
      {/*Course Title*/}
       <h2 className="w-full capitalize font-medium text-4xl h-[65px]">Topic for this course</h2>
      {/*Progress*/}
-      <Progress/>
+      <Progress />
      {/*Weeks Content*/}
       <div className="w-full">
           {

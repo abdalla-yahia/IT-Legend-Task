@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react"
 
 export default function Progress_Hook() {
-        const progress = localStorage.getItem('student_progress') || 0
+    const progress = localStorage.getItem('student_progress') || 0
     const [visible, setVisible] = useState(false);
     const ProgressRef = useRef<HTMLDivElement | null>(null)
 

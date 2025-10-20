@@ -140,6 +140,12 @@ body {
   background: transparent;
   font-size: 18px;
   cursor: pointer;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 
 /* If User Want To Disable Wide Mode On Small Screen  */
