@@ -24,6 +24,7 @@ export default function Lesson_Component_Hook({lesson}:{lesson:Lesson_Interface}
             }
         }
     },[])
+
     // Change Lesson Locked Icon If User Clicked On It Before
     useEffect(()=>{
         if(localStorage.getItem('file_clicked')){
@@ -34,6 +35,7 @@ export default function Lesson_Component_Hook({lesson}:{lesson:Lesson_Interface}
             }
         }
     },[setTogglePdf,setToggleExam])
+
     //Click On Pdf Icon Handeler
     const ClickPdfIconHandller =()=>{
         const file_clicked = {
@@ -69,6 +71,7 @@ export default function Lesson_Component_Hook({lesson}:{lesson:Lesson_Interface}
             dispatch(setExam(lesson?.questions))
         }
     }
+
     //Clicked Lesson Video Handeller
     const ClickLessonVideoHandller = () =>{
         const file_clicked = {
@@ -103,5 +106,6 @@ export default function Lesson_Component_Hook({lesson}:{lesson:Lesson_Interface}
             }
         }
     } 
+    
   return {ClickPdfIconHandller,ClickLessonVideoHandller,ToggleShowIcon,LessonShown}
 }

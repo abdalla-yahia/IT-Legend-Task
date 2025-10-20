@@ -6,19 +6,19 @@ import { useEffect } from "react";
 import { setAllComments } from "@/Features/Slices/Course_Slice";
 import dynamic from "next/dynamic";
 import Spinner from "@/Utils/Spinner";
-const Video_Player_Container = dynamic(()=>import("./Video_Player/Video_Player_Container"),{ssr:false,loading:()=><Spinner text="Loading"/>});
+const Video_Player_Container = dynamic(()=>import("./Video_Player/Video_Player_Container"),{ssr:true,loading:()=><Spinner text="Loading"/>});
 const Sections_Details_Container = dynamic(()=>import("./Details/Sections_Details_Container"),{ssr:false,loading:()=><Spinner text="Loading"/>});
 const Curriculm_Content_Container = dynamic(()=>import("./Curriculm_Content/Curriculm_Content_Container"),{ssr:false,loading:()=><Spinner text="Loading"/>});
 
 export default function Course_Details_Container({ id }: { id: string }) {
     const {courses} = useAppSelector((state:RootState)=>state.course) ;
     const {Lesson} = useAppSelector((state:RootState)=>state.lesson) ;
-    const course = (courses?.filter((course:Course_Interface)=>course?.id===id)[0]);
+    const course = (courses?.filter((course:Course_Interface)=>course?.id === id)[0]);
     const dispatch = useAppDispatch();
     //Set Comments Data Of The Course
     useEffect(()=>{
       dispatch(setAllComments(course?.comments))
-    },[course])
+    },[course,dispatch])
     
   return (
     <>

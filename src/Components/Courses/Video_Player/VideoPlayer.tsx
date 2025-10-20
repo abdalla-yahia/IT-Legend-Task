@@ -2,9 +2,9 @@
 import { useEffect, useRef, useState } from "react";
 import plyr from "plyr";
 import "plyr/dist/plyr.css";
-import { FaPlay,FaPause } from "react-icons/fa";
+import { FaPlay } from "react-icons/fa";
 import {UseWideModeContext} from '@/Contexts/Wide_Mode_Context';
-export default function VideoPlayer({src,poster,}: {src: string;poster?: string;}) {
+export default function VideoPlayer({src,poster}: {src: string | undefined;poster?: string;}) {
   const {setToggleWideMode} = UseWideModeContext()
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -60,10 +60,8 @@ export default function VideoPlayer({src,poster,}: {src: string;poster?: string;
         >
           <div className="bg-white rounded-full w-10 h-10 flex justify-center items-center shadow-lg transition-all duration-300 hover:scale-110">
             {
-              !isPlaying ?(
+              !isPlaying &&(
                 <FaPlay size={15} className="text-red-400 ml-1" />
-              ):
-              (<FaPause size={15} className="text-red-400 " />
               )
             }
           </div>
