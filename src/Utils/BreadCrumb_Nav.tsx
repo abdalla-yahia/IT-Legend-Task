@@ -2,7 +2,7 @@
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { FaAngleRight } from "react-icons/fa6";
-
+import { IoHomeOutline } from './Icons';
 export default function Breadcrumb() {
   const pathname = usePathname();
   const segments = pathname.split('/').filter(Boolean);
@@ -10,7 +10,10 @@ export default function Breadcrumb() {
     <nav  className="w-[91.41%] h-[63px] text-shadow-amber-500 text-gray-600 my-2 ">
       <ul className={`font-normal flex flex-wrap items-center gap-x-2 rtl:space-x-reverse ml-0 mr-auto`}>
         <li>
-          <Link href="/" className="text-button-color-light hover:text-amber-500">Home</Link>
+          <Link href="/" className="text-button-color-light hover:text-amber-500 flex gap-0">
+           <IoHomeOutline size={16} className="inline mb-1 mr-1"/>
+           Home
+          </Link>
         </li>
 
         {segments.map((seg, index) => {
