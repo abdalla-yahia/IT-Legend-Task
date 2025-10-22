@@ -13,7 +13,7 @@ export default function Sections_Details_Container({ course }: { course:Course_I
   return (
     <section className={`${toggleWideMode ? 'col-span-2' : 'col-span-1'} order-2 md:order-3 flex flex-col min-h-full gap-10 relative`}>
       {/*Navbar*/}
-      <NavLinks />
+      {!toggleWideMode && <NavLinks />}
       {/*Course Material*/}
       <Course_Material_Container course={course}/>
       {/*Comments*/}
