@@ -12,7 +12,7 @@ export default function Section_Header_Container({course,Lesson}:{course:Course_
             {/*Course Title*/}
             <h1 className="text-2xl md:text-4xl font-bold text-foreground">{course?.title}</h1>
             {/*Lesson Title */}
-            <h2 className="text-2xl md:text-4xl font-bold text-foreground line-clamp-1">{Lesson?.title}</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-foreground/60 line-clamp-1">{Lesson?.title}</h2>
         </section>
     </header>
   )

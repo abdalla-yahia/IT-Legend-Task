@@ -1,0 +1,9 @@
+.question_form {
+    transform:  translateX(calc((100% + 24px) * var(--index) * -1));
+}
+
+@media (max-width:767px) {
+    .question_form {
+    transform:  translateX(calc((100% + 16px) * var(--index) * -1));
+}
+}

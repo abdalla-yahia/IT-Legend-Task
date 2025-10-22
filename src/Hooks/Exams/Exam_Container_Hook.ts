@@ -10,7 +10,7 @@ export default function Exam_Container_Hook() {
       const [questionIndex,setQuestionIndex] = useState(0)
       const [userAnswers,setUserAnswers] = useState<UserAnswer_Interface[]>([]);
       const [examResult,setExamResult] = useState(0)
-    
+
      // Scroll Window To Question
       const scrollToQuestion = (index: number) => {
         setQuestionIndex(index)
@@ -89,11 +89,38 @@ export default function Exam_Container_Hook() {
                     setToggleExam((prev)=>!prev)
                     window.location.reload();
                   } else {
-                    swal("The Exam Is Safe and Was Not Closed, Continues Your Exam وبلاش إستعباط");
+                    swal("The Exam Is Safe and Was Not Closed, Continues To Your Exam!");
                   }
                 });
        
       }
-    
+
+      //Handle Before Unload To Lock Exam If Student Try To Reload Or Leave Page
+      useEffect(()=>{
+        if(!toggleExam)return 
+        
+          const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+            event.preventDefault();
+            event.returnValue = ""; 
+            
+              const ExamTotalScore = Exam?.questions?.reduce((total, question) => total + question.point, 0);
+              const data = {id:Exam?.id,question:Exam?.questions,totalScore:0,ExamTotalScore}
+            //Set Data Of Exam On localStorage To Lock It 
+            if(localStorage.getItem('exams_Answerd')){
+              const ArrayOfExams = JSON.parse(localStorage.getItem('exams_Answerd') as string)
+              const FindExam = ArrayOfExams?.find((exam:Exam_Interface)=>exam?.id == Exam?.id)
+
+              if(!FindExam){
+                ArrayOfExams.push(data)
+                localStorage.setItem('exams_Answerd',JSON.stringify(ArrayOfExams))
+              }
+            }else localStorage.setItem('exams_Answerd',JSON.stringify([data])) 
+          };
+          //Reload Exam Page
+          window.addEventListener('beforeunload',handleBeforeUnload)
+          // //Clear Event Listener
+        return ()=> window.removeEventListener('beforeunload',handleBeforeUnload)
+      },[toggleExam,Exam])
+
   return {toggleExam,ForceCloseExam,Exam,scrollToQuestion,questionIndex,SubmitAnswersHandeller,userAnswers,setUserAnswers}
 }

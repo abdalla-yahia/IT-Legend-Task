@@ -49,6 +49,7 @@ export default function VideoPlayer({src,poster}: {src: string | undefined;poste
         className="w-full max-w-full object-cover min-h-[350px] overflow-hidden"
         playsInline
         controls
+        autoPlay
         poster={poster}
       />
 

@@ -5,7 +5,7 @@ import Lesson_Component_Hook from "@/Hooks/Curriculm_Content/Lesson_Component_Ho
 export default function Lesson_Component({lesson}:{lesson:Lesson_Interface}) {
   const {ClickPdfIconHandller,ClickLessonVideoHandller,ToggleShowIcon,LessonShown} = Lesson_Component_Hook({lesson} as {lesson:Lesson_Interface})
   return (
-    <li  className="flex w-full justify-between items-center border-b border-b-[#ddd] pb-3">
+    <li  className="flex w-full justify-between items-center border-t border-t-[#ddd] pt-4">
         <div className="flex w-[50%] justify-start items-center gap-2">
             <icon.PiFileTextLight onClick={()=>ClickPdfIconHandller()} className={`${lesson?.isexame ? "hover:text-blue-600 hover:scale-125 transition-all duration-300":"hover:text-red-600"} ${!ToggleShowIcon && 'hidden'} cursor-pointer`}/>
             <span onClick={()=>ClickLessonVideoHandller()} className={`${(lesson?.isexame && !ToggleShowIcon) ? 'cursor-not-allowed':'cursor-pointer'} capitalize  hover:text-primary`} >{lesson?.title}</span>
