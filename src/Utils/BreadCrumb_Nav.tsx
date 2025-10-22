@@ -10,7 +10,7 @@ export default function Breadcrumb() {
     <nav  className="w-[91.41%] h-[63px] text-shadow-amber-500 text-gray-600 my-2 ">
       <ul className={`font-normal flex flex-wrap items-center gap-x-2 rtl:space-x-reverse ml-0 mr-auto`}>
         <li>
-          <Link href="/" className="text-button-color-light hover:text-amber-500 flex gap-0">
+          <Link href="/" className="font-bold text-button-color-light hover:text-amber-500 flex gap-0">
            <IoHomeOutline size={16} className="inline mb-1 mr-1"/>
            Home
           </Link>
@@ -20,7 +20,7 @@ export default function Breadcrumb() {
           const href = '/' + segments.slice(0, index + 1).join('/');
           const name = decodeURIComponent(seg);
           return (
-            <li key={href} className="flex items-center gap-x-2">
+            <li key={href} className={`${segments?.length>1 && !segments?.lastIndexOf(seg) && 'font-bold'}  flex items-center gap-x-2`}>
               <FaAngleRight size={13}/>
               <Link href={href} className={` text-button-color-light hover:text-amber-500 capitalize`}>{name.split('-').join(' ')}</Link>
             </li>

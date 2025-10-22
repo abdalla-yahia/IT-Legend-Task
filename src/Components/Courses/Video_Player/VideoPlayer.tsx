@@ -1,21 +1,20 @@
 'use client'
 import { useEffect, useRef, useState } from "react";
 import plyr from "plyr";
-import "plyr/dist/plyr.css";
 import { FaPlay } from "react-icons/fa";
 import {UseWideModeContext} from '@/Contexts/Wide_Mode_Context';
+
 export default function VideoPlayer({src,poster}: {src: string | undefined;poster?: string;}) {
   const {setToggleWideMode} = UseWideModeContext()
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    if (!videoRef.current) return;
 
+  if (!videoRef.current) return;
     const player = new plyr(videoRef.current, {
       controls: ["play", "progress", "current-time", "mute", "volume", "settings", "fullscreen"],
     });
-
     
     player.on("play", () => setIsPlaying(true));
     player.on("pause", () => setIsPlaying(false));

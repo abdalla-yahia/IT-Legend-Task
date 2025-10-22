@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import { ReduxProvider } from "@/Lib/ReduxProvider";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import "plyr/dist/plyr.css";
 
 const spartan = localFont({
   src: [

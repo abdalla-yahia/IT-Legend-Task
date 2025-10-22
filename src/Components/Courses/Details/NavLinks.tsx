@@ -6,24 +6,24 @@ export default function NavLinks() {
     const {setToggleQuestionForm} = UseQuestionContext();
     const {setToggleLeaderBoard} = UseLeaderBoardContext()
   return (
-    <nav className="w-full">
+    <nav className="w-full my-3">
         <ul className="w-full flex justify-start items-center gap-3">
-            <li className="cursor-pointer text-muted hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#eee] shadow shadow-[#eee]">
+            <li className="cursor-pointer text-black/65 hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#eee] shadow shadow-[#eee]">
                 <Link href={'#Curriculm'} >
                         <icon.MdOutlinePlayLesson title="Curriculm" className="inline-block mr-1 mb-0.5 text-lg md:text-xl"/>
                 </Link>
             </li>
-            <li className="cursor-pointer text-muted hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#eee] shadow shadow-[#eee]">
+            <li className="cursor-pointer text-black/65 hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#eee] shadow shadow-[#eee]">
                 <Link href={'#Comments'} >
                         <icon.LiaCommentsSolid title="Comments" className="inline-block mr-1 mb-0.5 text-lg md:text-xl"/>
                 </Link>
             </li>
-            <li className="cursor-pointer text-muted hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#eee] shadow shadow-[#eee]">
+            <li className="cursor-pointer text-black/65 hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#eee] shadow shadow-[#eee]">
                 <Link onClick={()=>setToggleQuestionForm((prev)=>!prev)} href={''} >
                         <icon.LiaQuestionSolid title="Questions" className="inline-block mr-1 mb-0.5 text-lg md:text-xl"/>
                 </Link>
             </li>
-            <li className="cursor-pointer text-muted hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#eee] shadow shadow-[#eee]">
+            <li className="cursor-pointer text-black/65 hover:text-primary text-lg px-2 py-1 rounded-full bg-accent border border-[#eee] shadow shadow-[#eee]">
                 <Link onClick={()=>setToggleLeaderBoard((prev)=>!prev)} href={''} >
                         <icon.GrAchievement title="LeadrBoard" className="inline-block mr-1 mb-0.5 text-lg md:text-xl"/>
                 </Link>

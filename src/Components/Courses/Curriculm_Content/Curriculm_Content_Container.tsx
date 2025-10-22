@@ -7,15 +7,12 @@ import { RootState, useAppSelector } from "@/Lib/Store/store"
 import Exam_Container from "../modals/Exams/Exam_Container"
 import { UseWideModeContext } from "@/Contexts/Wide_Mode_Context"
 import { Course_Interface } from "@/Interfaces/Course_Interface"
-import NavLinks from "../Details/NavLinks"
 export default function Curriculm_Content_Container({course}:{course:Course_Interface}) {
   const {LessonPdf} = useAppSelector((state:RootState)=>state.lesson);
   const {toggleWideMode} = UseWideModeContext();
   
   return (
-    <section className={`${toggleWideMode ? 'col-span-2':'col-span-1'} order-3 md:order-2 flex flex-col justify-start items-start gap-6 row-span-2`}>
-     {/*Navbar*/}
-      {toggleWideMode && <NavLinks />}
+    <section className={`${toggleWideMode ? 'col-span-2 order-2 md:order-3':'col-span-1 order-3 md:order-2'}  order-3 md:order-2 flex flex-col justify-start items-start gap-6 row-span-2`}>
      {/*Section Title*/}
       <h2 className="w-full capitalize font-medium text-4xl h-[65px]">Topic for this course</h2>
      {/*Progress*/}
