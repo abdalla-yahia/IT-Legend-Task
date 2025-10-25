@@ -21,7 +21,7 @@ export default function Home() {
             priority
           />
          </Link> 
-        <h1 className="text-3xl cursor-pointer ">
+        <h1 className="text-3xl cursor-pointer p-3 rounded-2xl bg-blue-100 font-bold">
           <Link href={'/courses'}>
           It Legend Courses
           </Link>
